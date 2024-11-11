@@ -1,0 +1,10 @@
+description = "test spring"
+
+apply plugin: "kotlin"
+
+dependencies {
+    implementation(project(":spring-context"))
+    implementation(project(":spring-instrument"))
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+}
